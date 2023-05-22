@@ -1,0 +1,38 @@
+,source
+Welcome to the Hollywood Stories dataset,
+lovingly compiled by Information Is Beautiful,
+,
+"Herein, you'll find a list of every Hollywood film released over the last 5 years",
+and data on their,
+,
+: budget,"Wikipedia, variety and other media sources"
+: opening weekends,"the-numbers, boxofficemojo.com"
+": various grosses (domestic, foreign, opening weekends)","the-numbers, boxofficemojo.com"
+: story type (of the 22 different types of story),hand-curated
+: genre,imdb
+: average meta score of critical reviews ,Rotten Tomatoes
+: average audience socre,Rotten Tomatoes
+,
+"a mix of hand-compiled, scraped and hand-curated data awaiting a visualization",
+,
+so you can do cool things like,
+: scope the biggest grossing films of a year,
+: but then see their true profitability (i.e. how much of their budget they recovered),
+: and how many cinema / theatres they opened at,
+,
+"To edit the document and play with the figures, make a copy (File menu > make a copy) and then use the sorting feature for each column to shift the data",
+,
+,
+enjoy!,
+David McCandless,
+,
+,
+thanks to all these dogged researchers who hand-tilled this data,
+"Miriam Quick, Marley Whiteside, Dan Hampson, Pearl Doughty-White, Matt Hanock, Alexia Wdoswki",
+,
+,
+some notes about the data,
+"regarding storytype, obviously there's a subjective element to guessing the story-types. Some films have multiple plot-lines so one size does not always fit all.","As ever, If you strongly disagree, please email to offer us a correction: informationisbeautiful@gmail.com"
+,
+2011 - gross figures - these were not finished when we compiled this dataset so figures for 2011 are not complete,
+similarly figures from 2007-08 may be slightly inaccurate as those films may have accrued more gross in the intervening years ,We have checked where we've been able

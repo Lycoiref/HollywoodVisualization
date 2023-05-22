@@ -1,0 +1,8 @@
+{
+  "name": "HollywoodVisualization",
+  "version": "1.0.0",
+  "description": "好莱坞数据可视化",
+  "main": "index.js",
+  "author": "Lycoiref",
+  "license": "MIT"
+}
