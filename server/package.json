@@ -2,6 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon index.ts"
   },
@@ -10,6 +11,8 @@
     "@prisma/client": "4.11.0",
     "@types/koa": "^2.13.6",
     "@types/koa2-cors": "^2.0.2",
+    "csv-parse": "^5.3.10",
+    "csv-parser": "^3.0.0",
     "koa": "^2.14.2",
     "koa2-cors": "^2.0.6",
     "readable-stream": "^4.3.0"
