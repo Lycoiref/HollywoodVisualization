@@ -43,8 +43,10 @@ const generateData = async (csv) => {
                 children: []
             }
             for (let k = 0; k < csv[i].length; k++) {
-                console.log(csv[i][k])
-                console.log(csv[i][k][/Audience(.)*/])
+                if (!(csv[i][k]['Audience Score'] || csv[i][k]['Film'])) {
+                    console.log(csv[i][k])
+                    continue
+                }
                 const color = await getColor(csv[i][k]['Audience Score'])
                 // console.log(color)
                 if (csv[i][k]['Genre'] === genres[j]) {

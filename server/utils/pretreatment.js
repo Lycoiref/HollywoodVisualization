@@ -14,5 +14,8 @@ export const getCSV = async (fileName) => {
     for await (const record of parser) {
         records.push(record)
     }
+    // 将前两行数据去除
+    records.shift()
+    records.shift()
     return records
 }
