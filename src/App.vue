@@ -7,6 +7,7 @@
                 <div class="color-bar"></div>
                 <div class="name">多</div>
             </div>
+            注：节点大小越大，代表该类型的电影越多
         </div>
         <div id="main"></div>
     </div>
