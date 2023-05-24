@@ -67,6 +67,7 @@ const generateData = async (csv) => {
                 genre.itemStyle = {
                     color: genreColor
                 }
+                genre.symbolSize = genre.value * 1.3
             }
             year.children.push(genre)
         }
