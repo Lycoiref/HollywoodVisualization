@@ -47,7 +47,9 @@ const generateData = async (csv) => {
                     console.log(csv[i][k])
                     continue
                 }
-                const color = await getColor(csv[i][k]['Audience Score'])
+                const color = await getColor(
+                    Number(csv[i][k]['Audience Score'])
+                )
                 // console.log(color)
                 if (csv[i][k]['Genre'] === genres[j]) {
                     genre.value++
@@ -60,6 +62,10 @@ const generateData = async (csv) => {
                         },
                         children: []
                     })
+                }
+                const genreColor = await getColor(genre.value * 2)
+                genre.itemStyle = {
+                    color: genreColor
                 }
             }
             year.children.push(genre)
@@ -78,13 +84,15 @@ const getAllGenres = async (data) => {
 }
 
 const getColor = async (score) => {
-    const baseColorMin = '#FF2700' // 当Audience Score为0时的颜色
-    const baseColorMax = '#00FF00' // 当Audience Score为100时的颜色
+    // console.log(score / 100)
+    const baseColorMin = '00FF00' // 当Audience Score为100时的颜色
+    const baseColorMax = 'FF2700' // 当Audience Score为0时的颜色
     // 线性计算Audience Score对应的颜色
     const color =
         (score / 100) *
             (parseInt(baseColorMax, 16) - parseInt(baseColorMin, 16)) +
         parseInt(baseColorMin, 16)
+    // console.log(color)
     return '#' + Math.round(color).toString(16)
 }
 
