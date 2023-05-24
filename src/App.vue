@@ -1,6 +1,13 @@
 <template>
     <div class="app">
-        111
+        <div id="color-table">
+            颜色对照表：
+            <div class="color-item">
+                <div class="name">少</div>
+                <div class="color-bar"></div>
+                <div class="name">多</div>
+            </div>
+        </div>
         <div id="main"></div>
     </div>
 </template>
@@ -46,6 +53,32 @@ onMounted(async () => {
 .app {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+
+    #color-table {
+        position: fixed;
+        z-index: 999;
+        top: 15px;
+        right: 20px;
+
+        .color-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+
+            .color-bar {
+                width: 100px;
+                height: 8px;
+                border-radius: 4px;
+                background-image: linear-gradient(90deg, #00ff00, #ff2700);
+                margin: 0 10px;
+            }
+
+            .name {
+                font-size: 12px;
+            }
+        }
+    }
 
     #main {
         width: 100%;
